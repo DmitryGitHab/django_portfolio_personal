@@ -1,9 +1,17 @@
+{% extends 'portfolio/base.html'%}
+
+{% block content%}
+
 Hello blogs
 
-{% for blog in blogs%}
+<h2> Blog post{{blogs.count|pluralize}} by Dmitry: {{blogs.count}}</h2>
 
-<h2>{{ blog.title }} </h2>
-<p>{{ blog.description }} </p>
-<h5>{{ blog.date }}<h5>
+{% for blog in blogs %}
+
+<a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }} </h2></a>
+<p>{{ blog.description|safe|truncatechars:100 }} </p>
+<h5>{{ blog.date|date:'d.m.Y' }}<h5>
 
 {% endfor %}
+
+{% endblock%}
