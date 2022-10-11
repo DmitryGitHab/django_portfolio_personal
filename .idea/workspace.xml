@@ -44,11 +44,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/education/Py/projects/django_portfolio_personal",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/education/Py/projects/django_portfolio_personal/portfolio/static/portfolio",
     "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\education\Py\projects\django_portfolio_personal\portfolio\static\portfolio" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\education\Py\projects\django_portfolio_personal\blog\templates\blog" />
       <recent name="D:\education\Py\projects\django_portfolio_personal\blog\templates" />
@@ -63,8 +67,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657037992802</updated>
+      <workItem from="1661972676939" duration="2264000" />
+      <workItem from="1665239277304" duration="2537000" />
+      <workItem from="1665404701918" duration="5543000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
