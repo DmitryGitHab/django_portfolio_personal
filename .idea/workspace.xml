@@ -40,15 +40,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/education/Py/projects/django_portfolio_personal/portfolio/static/portfolio",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/education/Py/projects/django_portfolio_personal/portfolio/static/portfolio&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\education\Py\projects\django_portfolio_personal\portfolio\static\portfolio" />
@@ -69,7 +69,8 @@
       <updated>1657037992802</updated>
       <workItem from="1661972676939" duration="2264000" />
       <workItem from="1665239277304" duration="2537000" />
-      <workItem from="1665404701918" duration="5543000" />
+      <workItem from="1665404701918" duration="18039000" />
+      <workItem from="1665553846526" duration="98000" />
     </task>
     <servers />
   </component>

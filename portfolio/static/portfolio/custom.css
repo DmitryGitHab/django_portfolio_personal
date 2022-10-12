@@ -3,7 +3,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgba(0,0,0,.5) !important;
+    color: rgba(0,0,255,.5) !important;
 }
 
 body {
@@ -21,4 +21,19 @@ body {
     #blogdetailtitle {
         font-size: 5rem;
     }
+}
+
+div.stack-text {
+
+
+    text-align: left;
+    color: black;
+    /*height: 7em;  !* не в % *!*/
+    /*line-height: 7em; !* не поддерживается Opera Mini [opera.com] *!*/
+    /*margin-bottom: 50%;*/
+}
+
+#steel {
+  color: RGB(155,180,190);
+  font-weight:bold
 }
