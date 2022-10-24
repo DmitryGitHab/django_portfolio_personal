@@ -4,3 +4,161 @@
     <div class="cool-md-6">
     <img src="{{ project.image.url }}" class="img-fluid mb-6">     <h3>{{ project.title }}</h3>
     {% endif %}
+
+
+
+
+ <!--<div id="carousel-generic" class="carousel slide" data-ride="carousel" data-interval="20000">-->
+<!-- <ol class="carousel-indicators">-->
+<!-- {% for certificate in certificates %}-->
+<!-- <li data-target="#carousel-generic" data-slide-to="{{ certificate.index }}" {% ifequal certificate.index 0 %}class="active"{% endifequal %}></li>-->
+<!-- {% endfor %}-->
+<!-- </ol>-->
+<!-- <div class="carousel-inner" role="listbox">-->
+<!-- {% for certificate in certificates %}-->
+<!-- <div class="item{% ifequal certificate.index 0 %} active{% endifequal %}" style="background-color:#000;">-->
+<!-- <img style="opacity:0.6; -moz-opacity:0.6; filter: alpha(opacity=60) black; -khtml-opacity: 0.6; -webkit-filter: url(#blur);-->
+<!-- filter: url(#blur); -webkit-filter: blur(3px); filter: blur(3px); filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');-->
+<!-- -webkit-transition: 1s -webkit-filter linear; transition: 1s filter linear;" src="/static/img/{{ certificate.img }}" alt="{{ certificate.alt }}">-->
+<!-- <div class="carousel-caption">-->
+<!-- <h3> {{ certificate.title }}</h3>-->
+<!-- <p> {{ certificate.body }}</p>-->
+<!-- </div>-->
+<!-- </div>-->
+<!-- {% endfor %}-->
+<!-- </div>-->
+
+
+
+<!-- <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">-->
+<!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+<!-- <span class="sr-only">Сюда</span>-->
+<!-- </a>-->
+<!-- <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">-->
+<!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+<!-- <span class="sr-only">Туда</span>-->
+<!-- </a>-->
+<!--</div>-->
+
+
+
+
+
+HTML
+
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+  <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
+
+<div class="row justify-content-center mb-3">
+  <div class="col-md-9 text-center">
+    <h1 id="hometext" class="font-weight-bold">Dmitry Babanov</h1>
+          <h4 id="about" class="font-weight-bold"> My personal portfolio website.
+            <br> Python - developer.
+          </h4>
+  </div>
+</div>
+
+<div class="row justify-content-center my-3">
+  <div class="col-5">
+    <img src="{% static 'portfolio/photo.jpg' %}" height=”100px” width=”80px” class="img-fluid" title="personal photo">
+  </div>
+</div>
+
+<//- -->
+
+<h2 class="mt-5" style="text-align: center">Stack</h2>
+<hr>
+<div class="row">
+  {% for stack in stacks %}
+  <div class="col-lg-3 col-md-6">
+
+    {% if stack.url %}
+        <div class="container">
+            <div class="row row-cols-auto">
+                <div class="col mb-1"> <img src="{{ stack.image.url }}" class="img-fluid mb-2" width="100" height="100"></div>
+                <div class="col mb-1 stack-text"> <div class="oo-hide"> <p class="oo-hide">{{ stack.title }} </p> </div> <div class="o-hide"><p class="o-hide">{{ stack.description }}</p> </div></div>
+            </div>
+        </div>
+    {% else %}
+
+      <div class="container">
+          <div class="row row-cols-auto">
+              <div class="col mb-1"> <img src="{{ stack.image.url }}" class="img-fluid mb-2" width="100" height="100"></div>
+              <div class="col mb-1 stack-text"> <div class="oo-hide"> <p class="oo-hide">{{ stack.title }} </p> </div> <div class="o-hide"><p class="o-hide">{{ stack.description }}</p> </div></div>
+          </div>
+      </div>
+    {% endif %}
+
+  </div>
+  {% endfor %}
+</div>
+
+
+
+<//- -->
+
+<h2 class="mt-5">Portfolio</h2>
+<hr>
+<div class="row">
+  {% for project in projects %}
+  <div class="col-lg-4 col-md-6">
+
+    {% if project.url %}
+
+    <a href="{{ project.url }}"><img src="{{ project.image.url }}" class="img-fluid mb-2"></a>
+    {% else %}
+
+    <img src="{{ project.image.url }}" class="img-fluid mb-2">
+      {% endif %}
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.description }}</p>
+
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
+
+
+
+
+
+--------------
+
+ <div id="carousel-generic" class="carousel slide" data-ride="carousel" data-interval="20000">
+ <ol class="carousel-indicators">
+ {% for certificate in certificates %}
+ <li data-target="#carousel-generic" data-slide-to="{{ certificate.index }}" {% if certificate.index == 0 %}class="active"{% endif %}></li>
+ {% endfor %}
+ </ol>
+ <div class="carousel-inner" role="listbox">
+ {% for certificate in certificates %}
+ <div class="item{% if certificate.index == 0 %} active{% endif %}" style="background-color:#000;">
+ <img style="opacity:0.6; -moz-opacity:0.6; filter: alpha(opacity=60) black; -khtml-opacity: 0.6; -webkit-filter: url(#blur);
+ filter: url(#blur); -webkit-filter: blur(3px); filter: blur(3px); filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+ -webkit-transition: 1s -webkit-filter linear; transition: 1s filter linear;" src="/static/img/{{ certificate.img }}" alt="{{ certificate.alt }}">
+ <div class="carousel-caption">
+ <h3> {{ certificate.title }}</h3>
+ <p> {{ certificate.body }}</p>
+ </div>
+ </div>
+ {% endfor %}
+ </div>
+
+
+
+ <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+ <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+ <span class="sr-only">Сюда</span>
+ </a>
+ <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+ <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+ <span class="sr-only">Туда</span>
+ </a>
+</div>
+
+
