@@ -63,7 +63,9 @@ div.stack-text {
 }
 
 .o-hide:hover {
-  display: block;
+    color: #3489bd;
+  /*display: block;*/
+
 }
 
 .oo-hide {
@@ -71,8 +73,11 @@ div.stack-text {
 }
 
 .oo-hide:hover {
-  display: none;
-  transition: all ease 0.8s;
+  /*display: none;*/
+    font-weight: 500;
+    font-size: 22px;
+    color: #8A2BE2;
+    transition: all ease 0.8s;
 }
 
 
@@ -83,7 +88,7 @@ body{
 .carousel-inner .carousel-caption{
     padding-bottom: 170px;
 }
-.carousel-inner .carousel-caption h1{
+.carousel-inner .carousel-caption h1{s
     font-size: 52px;
 }
 
@@ -98,7 +103,7 @@ body{
     border: 2px solid #3489bd;
     text-decoration: none;
     background-color: #3489bd;
-    color: #fff;
+    color: #3489bd;
 }
 
 /* animated css */
